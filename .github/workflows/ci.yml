@@ -1,0 +1,15 @@
+(
+echo name: CI
+echo on: [push, pull_request]
+echo jobs:
+echo   lint-and-test:
+echo     runs-on: ubuntu-latest
+echo     steps:
+echo       - uses: actions/checkout@v3
+echo       - uses: actions/setup-python@v4
+echo         with:
+echo           python-version: '3.10'
+echo       - run: pip install -r requirements.txt
+echo       - run: flake8 src/
+echo       - run: pytest tests/
+) > .github\workflows\ci.yml
