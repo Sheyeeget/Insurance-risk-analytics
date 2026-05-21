@@ -1,0 +1,14 @@
+(
+echo pandas
+echo numpy
+echo matplotlib
+echo seaborn
+echo scipy
+echo scikit-learn
+echo xgboost
+echo shap
+echo jupyter
+echo pytest
+echo flake8
+echo dvc
+) > requirements.txt
